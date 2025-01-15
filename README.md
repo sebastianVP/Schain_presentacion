@@ -13,7 +13,33 @@ sudo apt-get install python-pip gfortran libpng-dev libblas-dev liblapack-dev li
 conda create --name=schain_master python=3.10
 
 4) Activar el entorno
+conda activate schain_master
 
 5) Clonar el repositorio
+cd D
 
 6) Moverse si es necesario a la rama del repositorio de interes.
+
+$ git clone http://jro-dev.igp.gob.pe/rhodecode/schain
+$ cd schain
+$ git checkout v3.0-devel # si queremos movernos a otra rama
+$ cd schainpy-
+$ pip install numpy
+$ pip install ./
+
+$ pip install mako
+$ pip install packaging
+$ cd ..
+
+
+7) Instalar digital_rf
+
+$ git clone https://github.com/MITHaystack/digital_rf
+$ cd digital_rf
+$ mkdir build 
+$ cd build
+$ cmake ..
+$ make
+$ sudo make install
+$ sudo ldconfig
+
