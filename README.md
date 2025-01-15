@@ -17,12 +17,15 @@ $ conda create --name=schain_master python=3.10
 
 $ conda activate schain_master
 
-5) Clonar el repositorio
+5) Instalar y actualizar paquetes
+$pip install --upgrade pip setuptools wheel
+
+6) Clonar el repositorio
 
 $ git clone http://jro-dev.igp.gob.pe/rhodecode/schain
 
 
-6) Moverse si es necesario a la rama del repositorio de interes.
+7) Moverse si es necesario a la rama del repositorio de interes.
 
 
 $ cd schain
@@ -31,7 +34,7 @@ $ git checkout v3.0-devel # si queremos movernos a otra rama v3.0-devel
 
 $ cd schainpy
 
-$ pip install numpy
+$ pip install numpy==1.24
 
 $ pip install ./
 
@@ -42,7 +45,7 @@ $ pip install packaging
 $ cd ..
 
 
-7) Instalar digital_rf
+8) Instalar digital_rf
 
 $ git clone https://github.com/MITHaystack/digital_rf
 
