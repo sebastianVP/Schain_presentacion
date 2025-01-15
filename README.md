@@ -38,9 +38,13 @@ $ cd schainpy
 
 $ pip install numpy==1.24
 
-$ pip install scipy==1.10
+$ pip install scipy==1.11
+
+$ pip install mysql-connector-python
 
 $ pip install ./
+
+#**Estos ultimos comandos son ocasionales**
 
 $ pip install mako
 
