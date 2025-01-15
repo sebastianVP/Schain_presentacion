@@ -7,11 +7,13 @@
 
 $ sudo apt-get install python-pip gfortran libpng-dev libblas-dev liblapack-dev libatlas-base-dev  python-tk libssl-dev libhdf5-dev
 
+$ sudo apt-get install build-essential  libmysqlclient-dev
+
 2) Instalar Anaconda
 
 3) Crear un entorno de desarrollo
 
-$ conda create --name=schain_master python=3.10
+$ conda create --name=schain_master python=3.9
 
 4) Activar el entorno
 
@@ -35,6 +37,8 @@ $ git checkout v3.0-devel # si queremos movernos a otra rama v3.0-devel
 $ cd schainpy
 
 $ pip install numpy==1.24
+
+$ pip install scipy==1.10
 
 $ pip install ./
 
